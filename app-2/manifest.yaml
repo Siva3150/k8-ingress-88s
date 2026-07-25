@@ -60,7 +60,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-  - host: "app1.sivadevops.space"
+  - host: "app2.sivadevops.space"
     http:
       paths:
       - pathType: Prefix
