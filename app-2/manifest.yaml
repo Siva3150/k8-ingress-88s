@@ -6,7 +6,7 @@ metadata:
  labels: 
    purpose: ingress-demo
    project: roboshop
-   app: app1
+   app: app2
 spec: 
  replicas: 2
  selector:
@@ -14,18 +14,18 @@ spec:
   matchLabels: 
    purpose: ingress-demo
    project: roboshop
-   app: app1 
+   app: app2
 # pod definition
  template: 
   metadata: 
    labels: 
     purpose: ingress-demo
     project: roboshop
-    app: app1
+    app: app2
   spec: 
    containers: 
-   - name: app-1  
-     image: siva3150/app-1:v1 
+   - name: app-2 
+     image: siva3150/app-2:v1 
      imagePullPolicy: Always  
 
 --- 
@@ -38,7 +38,7 @@ spec:
  selector:
   purpose: ingress-demo
   project: roboshop
-  app: app1
+  app: app2
  ports: 
  - protocol: TCP 
    port: 80 #service port 
